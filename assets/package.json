@@ -1,0 +1,37 @@
+{
+    "name": "@zairigimad/ux-haptics",
+    "version": "1.0.0",
+    "description": "Symfony UX component for haptic feedback using web-haptics",
+    "license": "MIT",
+    "symfony": {
+        "controllers": {
+            "haptics": {
+                "main": "dist/controller.js",
+                "fetch": "eager",
+                "enabled": true
+            }
+        },
+        "importmap": {
+            "web-haptics": "^0.0.6",
+            "@hotwired/stimulus": "^3.0.0"
+        }
+    },
+    "peerDependencies": {
+        "@hotwired/stimulus": "^3.0.0",
+        "web-haptics": "^0.0.6"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.20.7",
+        "@babel/core": "^7.20.12",
+        "@babel/plugin-proposal-class-properties": "^7.18.6",
+        "@babel/preset-env": "^7.20.2",
+        "@babel/preset-typescript": "^7.18.6",
+        "@hotwired/stimulus": "^3.2.1",
+        "typescript": "^5.0.0",
+        "web-haptics": "^0.0.6"
+    },
+    "scripts": {
+        "build": "babel src --extensions .ts -d dist --source-maps",
+        "watch": "babel src --extensions .ts -d dist --source-maps --watch"
+    }
+}
