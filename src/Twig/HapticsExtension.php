@@ -44,7 +44,7 @@ class HapticsExtension extends AbstractExtension
     {
         $values = $this->buildValues($options);
 
-        return $this->renderDataAttributes('ux--haptics', $values);
+        return $this->renderDataAttributes('zairigimad--ux-haptics--haptics', $values);
     }
 
     /**

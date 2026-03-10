@@ -50,22 +50,22 @@ type HapticPresetName =
  * ## Using a predefined preset
  * ```html
  * <button
- *   data-controller="ux--haptics"
- *   data-ux--haptics-preset-value="success"
+ *   data-controller="zairigimad--ux-haptics--haptics"
+ *   data-zairigimad--ux-haptics--haptics-preset-value="success"
  * >Tap me</button>
  * ```
  *
  * ## Using a custom pattern
  * ```html
  * <button
- *   data-controller="ux--haptics"
- *   data-ux--haptics-pattern-value='[{"duration":30},{"delay":60,"duration":40,"intensity":1}]'
+ *   data-controller="zairigimad--ux-haptics--haptics"
+ *   data-zairigimad--ux-haptics--haptics-pattern-value='[{"duration":30},{"delay":60,"duration":40,"intensity":1}]'
  * >Tap me</button>
  * ```
  *
  * ## With Twig stimulus helpers
  * ```twig
- * <button {{ stimulus_controller('ux/haptics', {
+ * <button {{ stimulus_controller('zairigimad/ux-haptics/haptics', {
  *     preset: 'success',
  *     intensity: 0.8,
  * }) }}>Tap me</button>

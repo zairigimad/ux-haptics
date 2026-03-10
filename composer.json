@@ -6,6 +6,7 @@
     "type": "symfony-bundle",
     "require": {
         "php": ">=8.2",
+        "symfony/console": "^7.0 || ^8.0",
         "symfony/dependency-injection": "^7.0 || ^8.0",
         "symfony/http-kernel": "^7.0 || ^8.0"
     },
@@ -34,6 +35,11 @@
         "thanks": {
             "name": "zairigimad/ux-haptics",
             "url": "https://github.com/zairigimad/ux-haptics"
+        },
+        "symfony": {
+            "bundles": {
+                "Zairigimad\\UxHaptics\\WebHapticsBundle": ["all"]
+            }
         }
     }
 }
