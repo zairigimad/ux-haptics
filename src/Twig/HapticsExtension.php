@@ -43,6 +43,7 @@ class HapticsExtension extends AbstractExtension
     public function hapticsController(array $options = []): string
     {
         $values = $this->buildValues($options);
+
         return $this->renderDataAttributes('ux--haptics', $values);
     }
 

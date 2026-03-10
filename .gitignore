@@ -1,2 +1,6 @@
 vendor/
 assets/node_modules/
+var/
+composer.lock
+.phpunit.result.cache
+.php-cs-fixer.cache
